@@ -10,7 +10,7 @@ function App() {
   const [flights, setFlights] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/flights")
+    fetch("http://localhost:8000/flights")
       .then(response => response.json())
       .then(data => setFlights(data))
       .catch(error => console.error('Error fetching data:', error));
